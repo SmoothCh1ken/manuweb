@@ -3,8 +3,8 @@
 <h1><br>Información sobre mi página.</h1>
 <p>Mucho gusto. <br>Aquí está todo sobre mi página.</p>
 <div class="gallery">
-    <a target="_blank" href="/images/img_1.jpg">
-        <img src="/images/img_1.jpg" alt="img_1" width="600" height="400">
+    <a target="_blank" href="{{ url_for('images', filename='img_1.jpg') }}">
+        <img src="{{ url_for('images', filename='img_1.jpg') }}" alt="img_1" width="600" height="400">
     </a>
     <div class="desc">Greissy</div>
 </div>
