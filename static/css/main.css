@@ -1,6 +1,10 @@
 body {
+  background: rgb(155, 155, 155);
   background-image: url("https://i.ibb.co/2F2Rv30/background.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  min-height: 100vh;
   
   /*
   background: #000000;
@@ -8,7 +12,7 @@ body {
   background: linear-gradient(to left, #434343, #000000);
   
   */
-  color: black;
+  color: white;
   
 }
 .navbar-custom{
@@ -33,6 +37,8 @@ p{
   padding-top: 10px;
 }
 div.gallery {
+  border-radius: 10px;
+  background-color: #0c1c2c;
   margin: 5px;
   border: 1px solid #ccc;
   float : left;
@@ -44,11 +50,14 @@ div.gallery:hover {
 }
 
 div.gallery img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   width : 100%;
   height: auto;
 }
 
 div.desc {
-  padding   : 15px;
+  padding-top: 3px;
+  padding-bottom: 3px;
   text-align: center;
 }
