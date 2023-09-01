@@ -5,5 +5,8 @@
     Espero que te sientas cómodo aquí.
 </p>
 <button href="{{url_for('Login')}}" class="my-button">Login</button>
-<button href="{{url_for('Register')}}" class="my-button">Register</button>
+<button href="{{url_for('Register')}}" class="my-button">
+    <a href="{{url_for('Register')}}">Register</a>
+</button>
+
 {% endblock %}
