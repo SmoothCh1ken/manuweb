@@ -1,8 +1,16 @@
-from flask import Flask,render_template
+from flask import Flask,render_template, redirect
 
 app = Flask(__name__)
 
 @app.route("/")
+def Redir():
+    return redirect("/Home")
+
+@app.route("/Login")
+def Login():
+    pass
+
+@app.route("/Home")
 def Bienvenida():
     return render_template("index.html")
 
