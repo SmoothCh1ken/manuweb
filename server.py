@@ -1,4 +1,4 @@
-from flask import Flask,render_template, redirect
+from flask import Flask,render_template, redirect, url_for
 
 app = Flask(__name__)
 
@@ -8,7 +8,11 @@ def Redir():
 
 @app.route("/Login")
 def Login():
-    pass
+    return render_template("login.html")
+
+@app.route("/Register")
+def Register():
+    return render_template("register.html")
 
 @app.route("/Home")
 def Bienvenida():
