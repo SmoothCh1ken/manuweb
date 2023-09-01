@@ -63,3 +63,10 @@ div.desc {
   font-size: 13px;
   font-family: "Montserrat";
 }
+.my-button{
+  border-radius: 5px;
+  border-color: #000000;
+}
+.my-button:hover{
+  border-color: #ffffff;
+}
